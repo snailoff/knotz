@@ -34,5 +34,5 @@ bower.json
 # Ignore pow environment settings
 .powenv
 
-/data/plain/*
-/data/images/*
+/bin/*
+
