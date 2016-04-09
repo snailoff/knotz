@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Knotzz</title>
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<%= csrf_meta_tags %>
+</head>
+<body>
+	<div class="container">
+		<img class="header_image" src="/assets/floor.jpg" />
+		<div class="logo">
+			<h1 class="title"><a href="/">knotz</a></h1>
+		</div>
+
+		<div class="knot">
+			<%= yield %>
+		</div>
+		<div class="footer">
+			<p class="copyright">powered by <a href="http://knotz.trunkcat.com/">knotz</a>-*</p>
+		</div>
+
+	</div> <!-- /container -->    
+</body>
+</html>

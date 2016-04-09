@@ -1,0 +1,24 @@
+<section>
+	<small><% if @knot.linked_from.any? %><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span><% end %> 
+	  	<% @knot.linked_from.each do |k| %><span class="ring"><%= link_to k.name, knot_path(k) %></span>. <% end %></small>
+</section>
+
+<section class="body">
+	<h2 class="subject"><%=@knot.name%></h2>
+	
+    <%= @content.html_safe %>
+</section>
+
+<section>
+<p class="text-right">
+	<% if not @knot.linked_to.empty? %>
+	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+	<br />
+	<% @knot.linked_to.each do |k| %>
+	<span class="ring"><%= link_to k.name, knot_path(k) %></span> <span class="datetime"><%= zeroToO(k.created_at) %></span><br />
+    <% end %>
+    <% end %>
+</p>
+</section>
+
+<script>$('.header_image').attr('src', '<%= @headerImage %>'); </script>

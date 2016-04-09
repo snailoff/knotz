@@ -1,0 +1,19 @@
+<section class="body">
+    <div class="row">
+        <div class="col-md-5"></div>
+        <div class="col-md-7 text-right">
+            <% @knots.each do |knot| %>
+            
+                <small>
+                <% knot.linked_from.each do |p| %>
+                <span class="up"><%= link_to p.name, knot_path(p) %></span>
+                <% end %>
+                </small>
+                <span class="ring"><%= link_to knot.name, knot %></span>
+
+                <span class="datetime"><%= zeroToO(knot.created_at) %></span>
+            <br />
+            <% end %>
+        </div>
+    </div>
+</section>
