@@ -34,5 +34,6 @@ bower.json
 # Ignore pow environment settings
 .powenv
 
-/bin/*
+/bin/*.output
+/bin/*.pid
 

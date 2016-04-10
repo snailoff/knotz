@@ -57,8 +57,8 @@ module Knotz
 					content += "#{line}\n"
 				end
 
+				sleep 2
 				Knotz::Fetcher.write_knot config[:knot], content
-
 				File.write config[:knot_path], content
 
 				Knotz.logger.info "knot(plain) is modified. restart."
