@@ -119,3 +119,15 @@ removed absolute path: ["/Users/bunsoyu/git/knotz/data/plain/index.knot"]
     INFO                   knotz.rb:46:in `start' -- : === Knotz end
     INFO                   knotz.rb:47:in `start' -- : ===
     INFO                   knotz.rb:48:in `start' -- : 
+modified absolute path: []
+added absolute path: ["/Users/bunsoyu/git/knotz/data/plain/.gitignore"]
+removed absolute path: []
+    INFO                   knotz.rb:20:in `start' -- : ===
+    INFO                   knotz.rb:21:in `start' -- : === Knotz start
+    INFO                   knotz.rb:22:in `start' -- : ===
+    INFO                   knotz.rb:23:in `start' -- : 
+else...
+    INFO                   knotz.rb:45:in `start' -- : ===
+    INFO                   knotz.rb:46:in `start' -- : === Knotz end
+    INFO                   knotz.rb:47:in `start' -- : ===
+    INFO                   knotz.rb:48:in `start' -- : 
