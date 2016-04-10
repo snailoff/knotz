@@ -1,17 +1,17 @@
 
 module Knotz
-
 	def self.initConfig
+		require 'rails'
+		
   		@mainConfig =  {
 			template_path: 'data/template/knotz.tpl',
-			db_path: 'db/development.sqlite3',
+			db_path: "db/#{Rails.env}.sqlite3",
 			knot_path: 'data/plain',
 			extension_path: 'data/extension'
 		}
 
 		@mainConfig.each { |_,x| x.replace File.join(Knotz.base_dir, x) }
 
-		puts "======> #{@mainConfig}"
 	end
 
 	class Config
